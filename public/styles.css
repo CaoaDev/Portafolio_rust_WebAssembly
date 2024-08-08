@@ -452,6 +452,19 @@ header {
 
 /* IntroStyle */
 
+.intro-text {
+  font-size: 1.1rem;
+  /* Tamaño de fuente ligeramente mayor */
+  line-height: 1.6;
+  /* Espaciado entre líneas para mejorar la legibilidad */
+  margin-bottom: 1rem;
+  /* Espaciado inferior para separar del siguiente elemento */
+  text-align: left;
+  /* Alineación del texto */
+  color: #333;
+  /* Color del texto para un contraste adecuado */
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;

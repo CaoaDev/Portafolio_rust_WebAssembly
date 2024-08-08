@@ -1,4 +1,4 @@
-use icondata::{OcProjectSm, FaRustBrands};
+use icondata::{FaRustBrands, OcProjectSm};
 use leptos::*;
 use leptos_icons::Icon;
 
@@ -31,8 +31,8 @@ pub fn Intro() -> impl IntoView {
                             </a>
                         </article>
                     </div>
-                    <p>
-                        "I am a Computer Systems Engineer with a solid foundation in both backend and frontend programming. Additionally, I have experience in preventive and corrective support for personal computers. I have conducted training sessions on computer science and the use of computing systems. I hold a master's degree in Telecommunications and am recognized for my problem-solving skills within my area of expertise. My knowledge includes operating systems such as Windows, GNU/Linux (with over 10 years of experience), and to a lesser extent, macOS. I have strong communication skills and strive to approach and solve problems in a self-taught manner."
+                    <p class="intro-text">
+                        "I am a Computer Systems Engineer with a strong background in both backend and frontend development. I also have experience in preventive and corrective PC support and have conducted training sessions on computer science and systems. Holding a master’s degree in Telecommunications, I am noted for my problem-solving skills. My expertise spans operating systems such as Windows, GNU/Linux (with over 10 years of experience), and macOS. I possess strong communication skills and a self-taught approach to problem-solving"
                     </p>
                     <a href="#contact" class="btn btn-primary">"Let's Talk"</a>
                 </div>
