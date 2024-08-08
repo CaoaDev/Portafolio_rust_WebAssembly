@@ -1,4 +1,10 @@
+use icondata::{
+    AiHtml5Outlined, BiAws, BiNodejs, BiReact, BiTailwindCss, BsFiletypeCss, BsFiletypeScss,
+    BsFiletypeSql, FaRustBrands, SiPostgresql, SiRedux, SiSvelte, SiSwagger, TbBrandDocker,
+    TbBrandJavascript, VsGithub,
+}; // Verifica el import correcto
 use leptos::*;
+use leptos_icons::Icon; // Verifica el import correcto
 
 #[component]
 pub fn Experience() -> impl IntoView {
@@ -27,14 +33,38 @@ pub fn Experience() -> impl IntoView {
 fn frontend_skills() -> impl IntoView {
     view! {
         <>
-            {skill_item("HTML +3")}
-            {skill_item("CSS +2")}
-            {skill_item("JavaScript +2")}
-            {skill_item("React/Next +1")}
-            {skill_item("Redux +1")}
-            {skill_item("SCSS +1")}
-            {skill_item("Tailwind 1")}
-            {skill_item("Svelte +1")}
+            <article class="experience__details">
+                <Icon icon=AiHtml5Outlined class="experience__details-icon" />
+                <h4>"HTML +3"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=BsFiletypeCss class="experience__details-icon" />
+                <h4>"CSS +2"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=TbBrandJavascript class="experience__details-icon" />
+                <h4>"JavaScript +2"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=BiReact class="experience__details-icon" />
+                <h4>"React/Next +1"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=SiRedux class="experience__details-icon" />
+                <h4>"Redux +1"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=BsFiletypeScss class="experience__details-icon" />
+                <h4>"SCSS +1"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=BiTailwindCss class="experience__details-icon" />
+                <h4>"Tailwind 1"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=SiSvelte class="experience__details-icon" />
+                <h4>"Svelte +1"</h4>
+            </article>
         </>
     }
 }
@@ -42,26 +72,50 @@ fn frontend_skills() -> impl IntoView {
 fn backend_skills() -> impl IntoView {
     view! {
         <>
-            {skill_item("Rust/WebAssembly +1")}
-            {skill_item("Node/NestJs +3")}
-            {skill_item("PostgreSQL +1")}
-            {skill_item("Swagger/Jira +2")}
-            {skill_item("SQL/NoSql +3")}
-            {skill_item("Git/GitHub +3")}
-            {skill_item("Docker +1")}
-            {skill_item("AWS +1")}
+            <article class="experience__details">
+                <Icon icon=FaRustBrands class="experience__details-icon" />
+                <h4>"Rust/WebAssembly +1"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=BiNodejs class="experience__details-icon" />
+                <h4>"Node/NestJs +3"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=SiPostgresql class="experience__details-icon" />
+                <h4>"PostgreSQL +1"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=SiSwagger class="experience__details-icon" />
+                <h4>"Swagger/Jira +2"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=BsFiletypeSql class="experience__details-icon" />
+                <h4>"SQL/NoSql +3"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=VsGithub class="experience__details-icon" />
+                <h4>"Git/GitHub +3"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=TbBrandDocker class="experience__details-icon" />
+                <h4>"Docker +1"</h4>
+            </article>
+            <article class="experience__details">
+                <Icon icon=BiAws class="experience__details-icon" />
+                <h4>"AWS +1"</h4>
+            </article>
         </>
     }
 }
 
-fn skill_item(skill: &'static str) -> impl IntoView {
-    view! {
-        <article class="experience__details">
-            <BsFillPatchCheckFill class="experience__details-icon"/>
-            <h4>{skill}</h4>
-        </article>
-    }
-}
+// fn skill_item(skill: &'static str) -> impl IntoView {
+//     view! {
+//         <article class="experience__details">
+//             <BsFillPatchCheckFill class="experience__details-icon"/>
+//             <h4>{skill}</h4>
+//         </article>
+//     }
+// }
 
 // You'll need to implement this icon component or use an appropriate Leptos-compatible icon library
 #[component]

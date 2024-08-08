@@ -1,4 +1,4 @@
-use icondata::{OcProjectSm, RiMedalBusinessLine};
+use icondata::{OcProjectSm, FaRustBrands};
 use leptos::*;
 use leptos_icons::Icon;
 
@@ -18,7 +18,7 @@ pub fn Intro() -> impl IntoView {
                     <div class="about__cards">
                         <article class="about__card">
                             <a href="#experience">
-                                <Icon icon=RiMedalBusinessLine class="about__icon" />
+                                <Icon icon=FaRustBrands class="about__icon" />
                                 <h5>"Experience"</h5>
                                 <small>"1+ year"</small>
                             </a>
