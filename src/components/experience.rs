@@ -1,7 +1,7 @@
 use icondata::{
-    AiHtml5Outlined, BiAws, BiNodejs, BiReact, BiTailwindCss, BsFiletypeCss, BsFiletypeScss,
-    BsFiletypeSql, FaRustBrands, SiPostgresql, SiRedux, SiSvelte, SiSwagger, TbBrandDocker,
-    TbBrandJavascript, VsGithub,
+    AiHtml5Outlined, BiNodejs, BiReact, BsFiletypeCss, BsFiletypeSql, FaAwsBrands, FaJavaBrands,
+    FaRustBrands, SiPostgresql, SiRedux, SiSvelte, SiSwagger, TbBrandDocker, TbBrandJavascript,
+    TbFileTypePhp, VsGithub,
 }; // Verifica el import correcto
 use leptos::*;
 use leptos_icons::Icon; // Verifica el import correcto
@@ -39,7 +39,7 @@ fn frontend_skills() -> impl IntoView {
             </article>
             <article class="experience__details">
                 <Icon icon=BsFiletypeCss class="experience__details-icon" />
-                <h4>"CSS +2"</h4>
+                <h4>"CSS/SCSS/SASS +2"</h4>
             </article>
             <article class="experience__details">
                 <Icon icon=TbBrandJavascript class="experience__details-icon" />
@@ -54,12 +54,12 @@ fn frontend_skills() -> impl IntoView {
                 <h4>"Redux +1"</h4>
             </article>
             <article class="experience__details">
-                <Icon icon=BsFiletypeScss class="experience__details-icon" />
-                <h4>"SCSS +1"</h4>
+                <Icon icon=FaJavaBrands class="experience__details-icon" />
+                <h4>"JAVA +1"</h4>
             </article>
             <article class="experience__details">
-                <Icon icon=BiTailwindCss class="experience__details-icon" />
-                <h4>"Tailwind 1"</h4>
+                <Icon icon=TbFileTypePhp class="experience__details-icon" />
+                <h4>"PHP +1"</h4>
             </article>
             <article class="experience__details">
                 <Icon icon=SiSvelte class="experience__details-icon" />
@@ -101,7 +101,7 @@ fn backend_skills() -> impl IntoView {
                 <h4>"Docker +1"</h4>
             </article>
             <article class="experience__details">
-                <Icon icon=BiAws class="experience__details-icon" />
+                <Icon icon=FaAwsBrands class="experience__details-icon" />
                 <h4>"AWS +1"</h4>
             </article>
         </>

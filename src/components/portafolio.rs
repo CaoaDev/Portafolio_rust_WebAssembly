@@ -26,7 +26,7 @@ pub fn Portfolio() -> impl IntoView {
         },
         Project {
             id: 2,
-            title: "Portfolio Rust/WebAssembly",
+            title: "Portfolio Rust - WebAssembly",
             // img: "/path/to/img4.jpg", // Cambia esto a la ruta correcta
             description: "This project is a personal portfolio built with Rust and WebAssembly, designed to showcase your work and skills. It includes sections for your professional experience, projects, and contact information, all rendered efficiently in the browser with WebAssembly for a smooth user experience.",
             technologies: "Rust | WebAssembly",
@@ -35,7 +35,7 @@ pub fn Portfolio() -> impl IntoView {
         },
         Project {
             id: 3,
-            title: "To-Do App",
+            title: "To-Do App - Frontend",
             // img: "/path/to/img2.jpg", // Cambia esto a la ruta correcta
             description: "TodoList-Svelte is a Svelte application for managing personal tasks. It enables users to add, edit, and delete tasks with a clean and intuitive interface.",
             technologies: "Svelte | CSS",
@@ -44,7 +44,7 @@ pub fn Portfolio() -> impl IntoView {
         },
         Project {
             id: 4,
-            title: "RickandMorty",
+            title: "RickandMorty - Frontend",
             // img: "/path/to/img3.jpg", // Cambia esto a la ruta correcta
             description: "RickAndMorty Image Gallery is a React app that displays images from the Rick and Morty series as interactive cards. Users can browse through various characters and scenes, with each card featuring details and visuals from the show.",
             technologies: "Svelte | CSS",
@@ -53,7 +53,7 @@ pub fn Portfolio() -> impl IntoView {
         },
         Project {
             id: 5,
-            title: "Shopping Cart",
+            title: "Shopping Cart - Frontend",
             // img: "/path/to/img5.jpg", // Cambia esto a la ruta correcta
             description: "React shopping cart application that allows users to add, view, and remove items from their cart. It features a dynamic user interface for managing product quantities and totals, offering a seamless shopping experience.",
             technologies: "React | CSS",
@@ -62,7 +62,7 @@ pub fn Portfolio() -> impl IntoView {
         },
         Project {
             id: 6,
-            title: "Pokecards",
+            title: "Pokecards - Frontend",
             // img: "/path/to/img6.jpg", // Cambia esto a la ruta correcta
             description: "Pokecards is a Next.js application that allows users to search for and view Pokémon cards. It offers a user-friendly interface to browse through a collection of Pokémon cards, showcasing essential details and images for each card.",
             technologies: "NextJS | Scss ",
