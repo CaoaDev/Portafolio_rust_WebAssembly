@@ -37,7 +37,7 @@ pub fn HeaderSocials() -> impl IntoView {
 pub fn CTA() -> impl IntoView {
     view! {
         <div class="cta">
-            <a href="/assets/Curriculum Vitae CAOA, Actual.pdf" download class="btn">
+            <a href="public/assets/Curriculum Vitae CAOA, Actual.pdf" download class="btn">
                 "Download C.V. Spanish"
             </a>
         </div>
@@ -58,4 +58,3 @@ fn FaGithub() -> impl IntoView {
 // fn FaAngellist() -> impl IntoView {
 //     view! { <span>"AngelList"</span> }
 // }
-
