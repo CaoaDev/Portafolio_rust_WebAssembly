@@ -1,5 +1,4 @@
 use leptos::*;
-use std::fs;
 
 #[component]
 pub fn Header() -> impl IntoView {
@@ -36,30 +35,15 @@ pub fn HeaderSocials() -> impl IntoView {
 
 #[component]
 pub fn CTA() -> impl IntoView {
-    // Define possible paths for the CV
-    let file_name = "Curriculum Vitae CAOA, Actual.pdf";
-    let paths = [
-        format!("public/assets/{}", file_name),
-        format!("dist/{}", file_name),
-        format!("/{}", file_name),
-    ];
-
-    // Function to find a valid path for the CV
-    fn find_valid_path(paths: &[String]) -> String {
-        for path in paths {
-            if fs::metadata(path).is_ok() {
-                return path.clone();
-            }
-        }
-        // Return a fallback path if no valid path is found
-        "/".to_string()
-    }
-
-    let valid_path = find_valid_path(&paths);
+    let cv_path = "assets/Curriculum.pdf";
 
     view! {
         <div class="cta">
-            <a id="cv-link" href={valid_path} download class="btn">
+            <a
+                href={cv_path}
+                download="Curriculum Vitae CAOA, Actual.pdf"
+                class="btn"
+            >
                 "Download C.V. Spanish"
             </a>
         </div>
