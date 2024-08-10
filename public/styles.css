@@ -607,7 +607,7 @@ header {
 .portfolio__item-cta {
   display: flex;
   gap: 1rem;
-  margin-top: 2cm;
+  margin-top: 2.5cm;
   /* Agrega un margen superior para el botón de GitHub */
   margin-bottom: 2rem;
 }
