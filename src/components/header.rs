@@ -35,7 +35,8 @@ pub fn HeaderSocials() -> impl IntoView {
 
 #[component]
 pub fn CTA() -> impl IntoView {
-    let cv_path = "assets/Curriculum.pdf";
+    let cv_path =
+        "https://drive.google.com/file/d/1baFmUQs577rF7cBq7qsJUE9KI1N5_ecc/view?usp=drive_link";
 
     view! {
         <div class="cta">
@@ -43,6 +44,8 @@ pub fn CTA() -> impl IntoView {
                 href={cv_path}
                 download="Curriculum Vitae CAOA, Actual.pdf"
                 class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 "Download C.V. Spanish"
             </a>
@@ -64,3 +67,4 @@ fn FaGithub() -> impl IntoView {
 // fn FaAngellist() -> impl IntoView {
 //     view! { <span>"AngelList"</span> }
 // }
+
