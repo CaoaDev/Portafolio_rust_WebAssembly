@@ -1,1 +1,2 @@
-pub mod contact;
+pub mod contact_module;
+pub use contact_module::Contact;

@@ -1,12 +1,14 @@
 use leptos::*;
 
-use crate::components::contact::contact::Contact;
-use crate::components::experience::experience::Experience;
-use crate::components::footer::footer::Footer;
-use crate::components::header::header::Header;
-use crate::components::intro::intro::Intro;
-use crate::components::portafolio::portafolio::Portfolio;
-use crate::components::topbar::topbar::Topbar;
+use crate::components::*;
+
+// use crate::components::contact::contact::Contact;
+// use crate::components::experience::experience::Experience;
+// use crate::components::footer::footer::Footer;
+// use crate::components::header::header::Header;
+// use crate::components::intro::intro::Intro;
+// use crate::components::portafolio::portafolio::Portfolio;
+// use crate::components::topbar::topbar::Topbar;
 
 /// Default Home Page
 #[component]
