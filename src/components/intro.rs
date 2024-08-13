@@ -32,7 +32,7 @@ pub fn Intro() -> impl IntoView {
                         </article>
                     </div>
                     <p class="intro-text">
-                        "I am a Computer Systems Engineer with a strong background in both backend and frontend development. I also have experience in preventive and corrective PC support and have conducted training sessions on computer science and systems. Holding a master’s degree in Telecommunications, I am noted for my problem-solving skills. My expertise spans operating systems such as Windows, GNU/Linux (with over 10 years of experience), and macOS. I possess strong communication skills and a self-taught approach to problem-solving"
+                        "I am a Computer Systems Engineer with a strong background in both backend and frontend development. I also have experience in preventive and corrective PC support and have conducted training sessions on computer science and systems. Holding a master’s degree in Telecommunications, I am noted for my problem-solving skills. My expertise spans operating systems such as Windows, GNU/Linux (with over 10 years of experience), and macOS. I possess strong communication skills and a self-taught approach to problem-solving."
                     </p>
                     <a href="#contact" class="btn btn-primary">"Let's Talk"</a>
                 </div>
