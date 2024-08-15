@@ -1,5 +1,5 @@
 pub mod contact;
-pub mod counter_btn;
+// pub mod counter_btn;
 pub mod experience;
 pub mod footer;
 pub mod header;

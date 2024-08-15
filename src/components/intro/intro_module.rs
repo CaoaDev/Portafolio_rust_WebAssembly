@@ -11,7 +11,7 @@ pub fn Intro() -> impl IntoView {
             <div class="container about__container">
                 <div class="about__me">
                     <div class="about__me-image">
-                        <img src="/path/to/me.jpg" alt="me"/>
+                        <img src="public/yo2.png" alt="me"/>
                     </div>
                 </div>
                 <div class="about__content">
