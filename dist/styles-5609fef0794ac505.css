@@ -690,7 +690,7 @@ header {
 }
 
 /* TopBarStyle */
-
+/* Estilos generales para la barra de navegación */
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
@@ -723,4 +723,21 @@ nav a:hover {
 nav a.active {
   background: var(--color-bg);
   color: var(--color-white);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  nav {
+    width: calc(max-content - 1.5cm);
+    /* Reduce el ancho en 1.5 cm */
+    padding: 0.2rem 1.2rem;
+    /* Reduce el padding para disminuir la altura */
+    bottom: 1rem;
+    /* Ajusta la posición inferior si es necesario */
+  }
+
+  nav a {
+    padding: 0.7rem;
+    /* Reduce el padding interno de los enlaces */
+  }
 }
