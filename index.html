@@ -9,7 +9,11 @@
   <!-- Include favicon in dist output: see https://trunkrs.dev/assets/#icon -->
   <link data-trunk rel="icon" href="public/favicon.ico" />
 
-  <!-- include support for wasm-bindgen --weak-refs - see: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
+  <!-- Include the assets directory in the build output -->
+  <!-- This ensures that all files in the public/assets directory are copied to the root of the server for access -->
+  <link data-trunk rel="copy-dir" href="public/assets" />
+
+  <!-- Include support for wasm-bindgen --weak-refs - see: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
   <link data-trunk rel="rust" data-wasm-opt="z" data-weak-refs />
 </head>
 

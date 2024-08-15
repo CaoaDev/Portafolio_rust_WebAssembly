@@ -9,11 +9,15 @@
   <!-- Include favicon in dist output: see https://trunkrs.dev/assets/#icon -->
   <link rel="icon" href="/favicon-e9cbd8f50cc65bf2.ico" integrity="sha384&#x2D;YobgLXwtz0GhXVUTHml49p32guapVFlEG8UpQdDVN3kekOqkQi&#x2B;qSXEpwp&#x2B;yM4BW"/>
 
-  <!-- include support for wasm-bindgen --weak-refs - see: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
+  <!-- Include the assets directory in the build output -->
+  <!-- This ensures that all files in the public/assets directory are copied to the root of the server for access -->
   
-<script type="module" nonce="0FrA2mha7hJvOWFMUaFOgA==">
-import init, * as bindings from '/leptos_app-3efd0d4664880b10.js';
-const wasm = await init('/leptos_app-3efd0d4664880b10_bg.wasm');
+
+  <!-- Include support for wasm-bindgen --weak-refs - see: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
+  
+<script type="module" nonce="GVnD+l1/OKo9u1eNm96YxQ==">
+import init, * as bindings from '/leptos_app-4c000fd6dc629d17.js';
+const wasm = await init('/leptos_app-4c000fd6dc629d17_bg.wasm');
 
 
 window.wasmBindings = bindings;
@@ -23,8 +27,8 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
 
-<link rel="modulepreload" href="/leptos_app-3efd0d4664880b10.js" crossorigin=anonymous integrity="sha384-Ex5XHVlXFZEOpeCawwXwav8/G6ylEM6cVZCd9aflaJCRWKh4DqOo+ecGk5e5yt4s">
-<link rel="preload" href="/leptos_app-3efd0d4664880b10_bg.wasm" crossorigin=anonymous integrity="sha384-E0Kt78T8LjecWqNiXghDlX+RbbVsOG/CAqqgGRuW7BVcKKF1yIvtid73N8ECwEdR" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/leptos_app-4c000fd6dc629d17.js" crossorigin=anonymous integrity="sha384-Ex5XHVlXFZEOpeCawwXwav8/G6ylEM6cVZCd9aflaJCRWKh4DqOo+ecGk5e5yt4s">
+<link rel="preload" href="/leptos_app-4c000fd6dc629d17_bg.wasm" crossorigin=anonymous integrity="sha384-nmH9LgDE7r+fMSo3AN0qYI462cdsB0GrpW/bEqmKA7blcIZUNS7CBA+WFkYT9b+G" as="fetch" type="application/wasm"></head>
 
 <body>
   <!-- This is where your Rust WebAssembly app will be mounted -->
