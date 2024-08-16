@@ -43,9 +43,7 @@ body {
 
 .container {
   width: var(--container-width-lg);
-  max-width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 h1,
@@ -115,8 +113,6 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
-  max-width: 100%;
-  height: auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -131,7 +127,6 @@ img {
 
 @media screen and (max-width: 600px) {
   .container {
-    padding: 0 1rem;
     width: var(--container-width-sm);
   }
 
@@ -152,7 +147,7 @@ img {
   flex-direction: column;
   gap: 2rem;
   /* Adjust space between sections as needed */
-  padding: 0 1rem;
+  padding: 2rem;
   /* Adjust padding as needed */
 }
 
@@ -501,7 +496,6 @@ header {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
-  padding: 0 1rem;
 }
 
 .about__me {
@@ -607,7 +601,6 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  padding: 0 1rem;
 }
 
 .portfolio__item {
@@ -669,7 +662,6 @@ header {
 .container.testimonials__container {
   width: 40%;
   padding-bottom: 4rem;
-  padding: 0 1rem;
 }
 
 .client__avatar {
