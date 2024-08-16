@@ -733,6 +733,8 @@ nav {
   gap: 1rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
+  justify-content: center;
+  /* Centra los elementos hijos horizontalmente */
 }
 
 /* Estilos para los enlaces en la barra de navegación */
@@ -761,16 +763,21 @@ nav a:hover {
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   nav {
-    width: 100%;
-    /* Ajusta el ancho para ocupar toda la pantalla en dispositivos móviles */
-    padding: 0.2rem;
+    width: auto;
+    /* Ajusta el ancho para ajustarse al contenido en dispositivos móviles */
+    padding: 0.5rem;
     /* Ajusta el padding para reducir la altura */
+    bottom: 1rem;
+    /* Ajusta la posición inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Mantiene el centrado horizontal */
   }
 
   nav a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     /* Tamaño del texto para pantallas pequeñas */
-    padding: 0.7rem;
+    padding: 0.5rem;
     /* Padding para pantallas pequeñas */
   }
 }
