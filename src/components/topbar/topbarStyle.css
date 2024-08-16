@@ -1,9 +1,11 @@
 /* Estilos generales para la barra de navegación */
 nav {
   background: rgba(0, 0, 0, 0.3);
-  width: max-content;
+  width: calc(max-content - 2cm);
+  /* Reduce el ancho total en 2 cm */
   display: block;
-  padding: 0.7rem 1.7rem;
+  padding: 0.2rem 1.2rem;
+  /* Ajusta el padding para reducir la altura */
   z-index: 2;
   position: fixed;
   left: 50%;
@@ -15,37 +17,34 @@ nav {
   backdrop-filter: blur(15px);
 }
 
+/* Estilos para los enlaces en la barra de navegación */
 nav a {
   background: transparent;
-  padding: 0.9rem;
+  padding: 0.7rem;
+  /* Ajusta el padding para mantener la proporción */
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
   font-size: 1.1rem;
 }
 
-nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-
+/* Estilos para los enlaces activos */
 nav a.active {
   background: var(--color-bg);
   color: var(--color-white);
 }
 
+/* Estilos para los enlaces en hover */
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   nav {
-    width: calc(max-content - 1.5cm);
-    /* Reduce el ancho en 1.5 cm */
+    width: calc(max-content - 2cm);
+    /* Reduce el ancho total en 2 cm */
     padding: 0.2rem 1.2rem;
-    /* Reduce el padding para disminuir la altura */
-    bottom: 1rem;
-    /* Ajusta la posición inferior si es necesario */
-  }
-
-  nav a {
-    padding: 0.7rem;
-    /* Reduce el padding interno de los enlaces */
+    /* Ajusta el padding para reducir la altura */
   }
 }
