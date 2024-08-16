@@ -43,7 +43,9 @@ body {
 
 .container {
   width: var(--container-width-lg);
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 h1,
@@ -113,6 +115,8 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -127,6 +131,7 @@ img {
 
 @media screen and (max-width: 600px) {
   .container {
+    padding: 0 1rem;
     width: var(--container-width-sm);
   }
 
@@ -147,7 +152,7 @@ img {
   flex-direction: column;
   gap: 2rem;
   /* Adjust space between sections as needed */
-  padding: 2rem;
+  padding: 0 1rem;
   /* Adjust padding as needed */
 }
 
@@ -284,6 +289,33 @@ form span {
 .experience__details {
   display: flex;
   gap: 1rem;
+}
+
+.experience__details-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /* Opcional, si quieres quitar el subrayado del enlace */
+  color: inherit;
+  /* Asegura que el color del texto se herede del elemento padre */
+}
+
+.experience__details-icon {
+  margin-right: 1cm;
+  /* Espacio de 1 cm entre el ícono y el texto */
+}
+
+/* Aplica el efecto solo al h4 dentro de .experience__details */
+.experience__details h4 {
+  color: #ffffff;
+  /* Color blanco inicial */
+  transition: color var(--transition);
+  /* Transición suave para el color */
+}
+
+.experience__details:hover h4 {
+  color: var(--color-primary-variant);
+  /* Color azul al pasar el ratón */
 }
 
 .experience__details-icon {
@@ -469,6 +501,7 @@ header {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
+  padding: 0 1rem;
 }
 
 .about__me {
@@ -574,6 +607,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+  padding: 0 1rem;
 }
 
 .portfolio__item {
@@ -635,6 +669,7 @@ header {
 .container.testimonials__container {
   width: 40%;
   padding-bottom: 4rem;
+  padding: 0 1rem;
 }
 
 .client__avatar {
@@ -693,18 +728,17 @@ header {
 /* Estilos generales para la barra de navegación */
 nav {
   background: rgba(0, 0, 0, 0.3);
-  width: calc(max-content - 2cm);
-  /* Reduce el ancho total en 2 cm */
-  display: block;
-  padding: 0.2rem 1.2rem;
-  /* Ajusta el padding para reducir la altura */
+  width: calc(min-content + 4cm);
+  /* Aumenta el ancho total en 4 cm */
+  padding: 0.7rem 2.2rem;
+  /* Ajusta el padding para aumentar la altura */
   z-index: 2;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   bottom: 2rem;
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
 }
@@ -712,12 +746,13 @@ nav {
 /* Estilos para los enlaces en la barra de navegación */
 nav a {
   background: transparent;
-  padding: 0.7rem;
+  padding: 1rem;
   /* Ajusta el padding para mantener la proporción */
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  /* Aumenta el tamaño del texto */
 }
 
 /* Estilos para los enlaces activos */
@@ -734,9 +769,16 @@ nav a:hover {
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   nav {
-    width: calc(max-content - 2cm);
-    /* Reduce el ancho total en 2 cm */
-    padding: 0.2rem 1.2rem;
+    width: 100%;
+    /* Ajusta el ancho para ocupar toda la pantalla en dispositivos móviles */
+    padding: 0.2rem;
     /* Ajusta el padding para reducir la altura */
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    /* Tamaño del texto para pantallas pequeñas */
+    padding: 0.7rem;
+    /* Padding para pantallas pequeñas */
   }
 }

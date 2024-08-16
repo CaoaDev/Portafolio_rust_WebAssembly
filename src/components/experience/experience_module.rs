@@ -34,36 +34,59 @@ fn frontend_skills() -> impl IntoView {
     view! {
         <>
             <article class="experience__details">
+                <a href="https://www.w3.org/" target="_blank" class="experience__details-link">
                 <Icon icon=AiHtml5Outlined class="experience__details-icon" />
-                <h4>"HTML +3"</h4>
+                    <h4>"HTML +3"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
+                <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" class="experience__details-link">
                 <Icon icon=BsFiletypeCss class="experience__details-icon" />
-                <h4>"CSS/SCSS/SASS +2"</h4>
+                    <h4>"CSS/SCSS/SASS +2"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
+                <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank" class="experience__details-link">
                 <Icon icon=TbBrandJavascript class="experience__details-icon" />
-                <h4>"JavaScript +2"</h4>
+                    <h4>"JavaScript +2"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
+                <a href="https://reactjs.org/" target="_blank" class="experience__details-link">
                 <Icon icon=BiReact class="experience__details-icon" />
-                <h4>"React/Next +1"</h4>
+            <h4>"React/Next +1"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=SiRedux class="experience__details-icon" />
-                <h4>"Redux +1"</h4>
+                <a href="https://redux.js.org/" target="_blank" class="experience__details-link">
+                    <Icon icon=SiRedux class="experience__details-icon" />
+                    <h4>"Redux +1"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=FaJavaBrands class="experience__details-icon" />
-                <h4>"JAVA +1"</h4>
+                <a href="https://www.java.com/" target="_blank" class="experience__details-link">
+                    <Icon icon=FaJavaBrands class="experience__details-icon" />
+                    <h4>"JAVA +1"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=TbFileTypePhp class="experience__details-icon" />
-                <h4>"PHP +1"</h4>
+                <a href="https://www.php.net/" target="_blank" class="experience__details-link">
+                    <Icon icon=TbFileTypePhp class="experience__details-icon" />
+                    <h4>"PHP +1"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=SiSvelte class="experience__details-icon" />
-                <h4>"Svelte +1"</h4>
+                <a href="https://svelte.dev/" target="_blank" class="experience__details-link">
+                    <Icon icon=SiSvelte class="experience__details-icon" />
+                    <h4>"Svelte +1"</h4>
+                </a>
             </article>
         </>
     }
@@ -73,36 +96,59 @@ fn backend_skills() -> impl IntoView {
     view! {
         <>
             <article class="experience__details">
-                <Icon icon=FaRustBrands class="experience__details-icon" />
-                <h4>"Rust/WebAssembly +1"</h4>
+                <a href="https://www.rust-lang.org/" target="_blank" class="experience__details-link">
+                    <Icon icon=FaRustBrands class="experience__details-icon" />
+                    <h4>"Rust/WebAssembly +1"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=BiNodejs class="experience__details-icon" />
-                <h4>"Node/NestJs +3"</h4>
+                <a href="https://nodejs.org/" target="_blank" class="experience__details-link">
+                    <Icon icon=BiNodejs class="experience__details-icon" />
+                    <h4>"Node/NestJs +3"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=SiPostgresql class="experience__details-icon" />
-                <h4>"PostgreSQL +1"</h4>
+                <a href="https://www.postgresql.org/" target="_blank" class="experience__details-link">
+                    <Icon icon=SiPostgresql class="experience__details-icon" />
+                    <h4>"PostgreSQL +1"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=SiSwagger class="experience__details-icon" />
-                <h4>"Swagger/Jira +2"</h4>
+                <a href="https://swagger.io/" target="_blank" class="experience__details-link">
+                    <Icon icon=SiSwagger class="experience__details-icon" />
+                    <h4>"Swagger/Jira +2"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=BsFiletypeSql class="experience__details-icon" />
-                <h4>"SQL/NoSql +3"</h4>
+                <a href="https://www.sql.org/" target="_blank" class="experience__details-link">
+                    <Icon icon=BsFiletypeSql class="experience__details-icon" />
+                    <h4>"SQL/NoSql +3"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=VsGithub class="experience__details-icon" />
-                <h4>"Git/GitHub +3"</h4>
+                <a href="https://github.com/" target="_blank" class="experience__details-link">
+                    <Icon icon=VsGithub class="experience__details-icon" />
+                    <h4>"Git/GitHub +3"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=TbBrandDocker class="experience__details-icon" />
-                <h4>"Docker +1"</h4>
+                <a href="https://www.docker.com/" target="_blank" class="experience__details-link">
+                    <Icon icon=TbBrandDocker class="experience__details-icon" />
+                    <h4>"Docker +1"</h4>
+                </a>
             </article>
+
             <article class="experience__details">
-                <Icon icon=FaAwsBrands class="experience__details-icon" />
-                <h4>"AWS +1"</h4>
+                <a href="https://aws.amazon.com/" target="_blank" class="experience__details-link">
+                    <Icon icon=FaAwsBrands class="experience__details-icon" />
+                    <h4>"AWS +1"</h4>
+                </a>
             </article>
         </>
     }

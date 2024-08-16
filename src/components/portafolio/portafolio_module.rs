@@ -67,7 +67,7 @@ pub fn Portfolio() -> impl IntoView {
             description: "Pokecards is a Next.js application that allows users to search for and view Pokémon cards. It offers a user-friendly interface to browse through a collection of Pokémon cards, showcasing essential details and images for each card.",
             technologies: "NextJS | Scss ",
             // link: "https://lukinoo.github.io/math-resource/",
-            github: "https://github.com/lukinoo/math-resource",
+            github: "https://github.com/CaoaDev/pokemon-next.js",
         },
     ];
 
