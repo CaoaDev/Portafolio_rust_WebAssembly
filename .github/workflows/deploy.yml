@@ -20,10 +20,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Install Rust
+      - name: Install nightly Rust
         uses: actions-rs/toolchain@v1
         with:
-          toolchain: stable
+          toolchain: nightly
           override: true
           components: clippy, rustfmt
       - name: Cache dependencies
@@ -31,9 +31,9 @@ jobs:
       - name: Add WASM target
         run: rustup target add wasm32-unknown-unknown
       - name: Lint code
-        run: cargo clippy && cargo fmt --check
+        run: cargo +nightly clippy --features nightly && cargo +nightly fmt --check
       - name: Run tests
-        run: cargo test
+        run: cargo +nightly test --features nightly
       # Si usas npm, descomenta la siguiente línea:
       # - name: Install npm dependencies
       #   run: npm ci
@@ -43,7 +43,7 @@ jobs:
       - name: Download and install Trunk
         run: wget -qO- https://github.com/trunk-rs/trunk/releases/download/v0.18.2/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
       - name: Build with Trunk
-        run: ./trunk build --release --public-url "${GITHUB_REPOSITORY#*/}"
+        run: ./trunk build --release --features nightly --public-url "${GITHUB_REPOSITORY#*/}"
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
