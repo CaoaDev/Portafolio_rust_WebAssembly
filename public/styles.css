@@ -127,12 +127,7 @@ img {
 
 @media screen and (max-width: 600px) {
   .container {
-    width: calc(var(--container-width-sm) - 2cm);
-    /* Reduce 2 cm del ancho total */
-    margin-left: 1cm;
-    /* Agrega margen izquierdo para centrar mejor */
-    margin-right: 1cm;
-    /* Ajusta el margen derecho para equilibrar */
+    width: var(--container-width-sm);
   }
 
   section>h2 {
