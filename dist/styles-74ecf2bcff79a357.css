@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;900&display=swap');
 
 * {
   margin: 0;
@@ -39,9 +39,19 @@ body {
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(../src/assets/bg-texture.png);
+  background-size: cover;
+  /* Ajusta según lo necesario */
+  background-repeat: no-repeat;
+  /* Si la imagen no es un patrón */
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centra contenido horizontalmente */
+  justify-content: center;
+  /* Centra contenido verticalmente */
   width: var(--container-width-lg);
   margin: 0 auto;
 }
@@ -87,6 +97,12 @@ a:hover {
   color: var(--color-white);
 }
 
+a:focus,
+.btn:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 .btn {
   width: max-content;
   display: inline-block;
@@ -95,7 +111,7 @@ a:hover {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
-  transition: var(--transition);
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 .btn:hover {
@@ -132,5 +148,19 @@ img {
 
   section>h2 {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    /* Reduce el tamaño del texto en pantallas muy pequeñas */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    /* Limitar el ancho máximo en pantallas muy grandes */
   }
 }
