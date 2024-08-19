@@ -50,3 +50,25 @@ button {
   text-align: center;
   margin: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    /* Ajusta el padding para pantallas pequeñas */
+  }
+
+  .buttons {
+    flex-direction: column;
+    /* Cambia la dirección de los botones a columna en pantallas pequeñas */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 1rem;
+    /* Reduce el padding de los encabezados en pantallas pequeñas */
+  }
+}
