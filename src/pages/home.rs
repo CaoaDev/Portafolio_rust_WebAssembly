@@ -11,7 +11,7 @@ use crate::islands::*;
 // use crate::components::topbar::topbar::Topbar;
 
 /// Default Home Page
-#[component]
+#[island]
 pub fn Home() -> impl IntoView {
     view! {
         <ErrorBoundary fallback=|errors| {
