@@ -340,7 +340,8 @@ form span {
   }
 
   .experience__container>div {
-    width: 100%;
+    width: calc(100% - 1cm);
+    /* Reducimos 1cm del ancho completo */
     padding: 2rem 1rem;
   }
 }
