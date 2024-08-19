@@ -127,7 +127,8 @@ img {
 
 @media screen and (max-width: 600px) {
   .container {
-    width: var(--container-width-sm);
+    width: calc(var(--container-width-sm) - 2cm);
+    /* Reduce 2 cm del ancho */
   }
 
   section>h2 {
@@ -340,8 +341,7 @@ form span {
   }
 
   .experience__container>div {
-    width: calc(100% - 1cm);
-    /* Reducimos 1cm del ancho completo */
+    width: 100%;
     padding: 2rem 1rem;
   }
 }
