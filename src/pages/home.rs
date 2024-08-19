@@ -1,6 +1,6 @@
 use leptos::*;
 
-use crate::components::*;
+use crate::islands::*;
 
 // use crate::components::contact::contact::Contact;
 // use crate::components::experience::experience::Experience;

@@ -1,0 +1,87 @@
+/* src/components/contactStyle.css */
+
+/* Ensure that the container is centered and has appropriate spacing */
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+/* Styles for the contact options section */
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* Styles for individual contact options */
+.contact__option {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.contact__option:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.contact__option h5 {
+  color: var(--color-light);
+}
+
+.contact__option h4 {
+  font-weight: 500;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Input and textarea styling */
+input,
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  /* Adjusted padding to be consistent */
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  color: var(--color-white);
+}
+
+/* Ensure consistent height for input and textarea */
+input[type="text"],
+textarea {
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 150px;
+  /* Ensure textarea has a minimum height */
+  resize: vertical;
+  /* Allow vertical resizing only */
+}
+
+form span {
+  font-size: 0.8rem;
+}

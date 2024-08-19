@@ -3,7 +3,7 @@ use leptos_meta::*;
 use leptos_router::*;
 
 // Modules
-mod components;
+mod islands;
 mod pages;
 
 // Top-Level pages
