@@ -1,22 +1,19 @@
 /* src/components/contactStyle.css */
-
-/* Ensure that the container is centered and has appropriate spacing */
 .container.contact__container {
-  width: 58%;
-  display: grid;
-  grid-template-columns: 30% 58%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
   gap: 12%;
 }
 
-/* Styles for the contact options section */
 .contact__options {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1.2rem;
 }
 
-/* Styles for individual contact options */
 .contact__option {
   background: var(--color-bg-variant);
   padding: 1.2rem;
@@ -44,44 +41,85 @@
 
 .contact__option h5 {
   color: var(--color-light);
+  font-size: 1rem;
+  /* Tamaño original para pantallas pequeñas */
 }
 
 .contact__option h4 {
   font-weight: 500;
+  font-size: 1.2rem;
+  /* Tamaño original para pantallas pequeñas */
 }
 
-/* Form styling */
+form span {
+  font-size: 0.8rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
 
-/* Input and textarea styling */
 input,
 textarea {
   width: 100%;
-  padding: 1.2rem;
-  /* Adjusted padding to be consistent */
+  padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
   border: 2px solid var(--color-primary-variant);
+  resize: none;
   color: var(--color-white);
 }
 
-/* Ensure consistent height for input and textarea */
-input[type="text"],
-textarea {
-  box-sizing: border-box;
+@media screen and (min-width: 1024px) {
+  .contact__option {
+    padding: 3rem;
+    border-radius: 3rem;
+  }
+
+  .contact__option-icon {
+    font-size: 3.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact__option a {
+    margin-top: 1.75rem;
+    font-size: 2rem;
+  }
+
+  .contact__option h5 {
+    font-size: 2rem;
+  }
+
+  .contact__option h4 {
+    font-size: 2.5rem;
+  }
+
+  form span {
+    font-size: 2rem;
+  }
+
+  form {
+    gap: 3rem;
+  }
+
+  input,
+  textarea {
+    padding: 3.75rem;
+    border-radius: 1.25rem;
+  }
 }
 
-textarea {
-  min-height: 150px;
-  /* Ensure textarea has a minimum height */
-  resize: vertical;
-  /* Allow vertical resizing only */
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
-form span {
-  font-size: 0.8rem;
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: var(--container-width-sm);
+  }
 }
