@@ -1,6 +1,6 @@
 use leptos::*;
 
-#[component]
+#[island]
 pub fn Testimonials() -> impl IntoView {
     // Definimos la estructura del testimonio
     struct Testimonial {

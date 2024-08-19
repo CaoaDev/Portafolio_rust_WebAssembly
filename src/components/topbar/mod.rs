@@ -1,2 +1,2 @@
-pub mod topbar_module;
-pub use topbar_module::Topbar;
+pub mod topbar_island;
+pub use topbar_island::Topbar;

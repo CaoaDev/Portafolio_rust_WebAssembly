@@ -1,2 +1,2 @@
-pub mod intro_module;
-pub use intro_module::Intro;
+pub mod intro_island;
+pub use intro_island::Intro;

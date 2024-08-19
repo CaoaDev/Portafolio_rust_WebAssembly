@@ -1,2 +1,2 @@
-pub mod footer_module;
-pub use footer_module::Footer;
+pub mod footer_island;
+pub use footer_island::Footer;
