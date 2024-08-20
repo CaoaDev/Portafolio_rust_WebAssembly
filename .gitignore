@@ -1,2 +1,9 @@
-/target
-# /dist
+# Ignorar todo por defecto
+*
+
+# Exceptuar el directorio dist/
+!/dist/
+
+# No ignores el archivo .gitignore
+!/.gitignore
+
