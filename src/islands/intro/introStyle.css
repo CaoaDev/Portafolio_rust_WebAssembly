@@ -38,6 +38,8 @@
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
+  margin: 0 auto;
+  /* Centro el componente en su contenedor */
 }
 
 .about__card:hover {
@@ -64,6 +66,10 @@
 .about__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
+  max-width: 90%;
+  /* Asegura que el texto no se extienda demasiado */
+  margin: 0 auto;
+  /* Centro el texto */
 }
 
 @media screen and (max-width: 1024px) {
@@ -83,13 +89,20 @@
 }
 
 @media screen and (max-width: 600px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+    /* Añadir un poco de relleno */
+  }
+
   .about__me {
-    width: 65%;
-    margin: 0rem auto 3rem;
+    width: 100%;
+    margin: 0 auto 3rem;
   }
 
   .about__cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -104,6 +117,10 @@
 
 .intro-text {
   text-align: justify;
+  max-width: 90%;
+  /* Asegura que el texto no se extienda demasiado */
+  margin: 0 auto;
+  /* Centro el texto */
 }
 
 .intro-text::after {
