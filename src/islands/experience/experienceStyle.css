@@ -24,7 +24,6 @@
   margin-bottom: 2rem;
   color: var(--color-primary);
   font-size: 1.4rem;
-  /* Tamaño de fuente ajustado */
 }
 
 .experience__content {
@@ -35,7 +34,6 @@
 
 .experience__content p {
   font-size: 0.9rem;
-  /* Tamaño de fuente ajustado */
 }
 
 .experience__details {
@@ -53,14 +51,12 @@
 .experience__details-icon {
   margin-right: 1cm;
   font-size: 1.2rem;
-  /* Tamaño de fuente ajustado */
 }
 
 .experience__details h4 {
   color: #ffffff;
   transition: color var(--transition);
   font-size: 1rem;
-  /* Tamaño de fuente ajustado */
 }
 
 .experience__details:hover h4 {

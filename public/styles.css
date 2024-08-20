@@ -57,7 +57,6 @@ h6 {
 
 h1 {
   font-size: 3rem;
-  /* Aumentado */
 }
 
 section {
@@ -73,9 +72,7 @@ section>h5 {
 section>h2 {
   color: var(--color-primary);
   margin-bottom: 4rem;
-  /* Aumentado */
   font-size: 2rem;
-  /* Aumentado */
 }
 
 .text-light {
@@ -86,7 +83,6 @@ a {
   transition: var(--transition);
   color: var(--color-primary);
   font-size: 1.3rem;
-  /* Aumentado */
 }
 
 a:hover {
@@ -98,13 +94,11 @@ a:hover {
   display: inline-block;
   color: var(--color-primary);
   padding: 1rem 1.5rem;
-  /* Aumentado */
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
   font-size: 1.3rem;
-  /* Aumentado */
 }
 
 .btn:hover {
@@ -144,7 +138,7 @@ img {
   }
 }
 
-/* src/components/contactStyle.css */
+/* ContactStyle */
 .container.contact__container {
   width: 60%;
   display: flex;
@@ -188,13 +182,11 @@ img {
 .contact__option h5 {
   color: var(--color-light);
   font-size: 1rem;
-  /* Tamaño original para pantallas pequeñas */
 }
 
 .contact__option h4 {
   font-weight: 500;
   font-size: 1.2rem;
-  /* Tamaño original para pantallas pequeñas */
 }
 
 form span {
@@ -296,7 +288,6 @@ textarea {
   margin-bottom: 2rem;
   color: var(--color-primary);
   font-size: 1.4rem;
-  /* Tamaño de fuente ajustado */
 }
 
 .experience__content {
@@ -307,7 +298,6 @@ textarea {
 
 .experience__content p {
   font-size: 0.9rem;
-  /* Tamaño de fuente ajustado */
 }
 
 .experience__details {
@@ -325,14 +315,12 @@ textarea {
 .experience__details-icon {
   margin-right: 1cm;
   font-size: 1.2rem;
-  /* Tamaño de fuente ajustado */
 }
 
 .experience__details h4 {
   color: #ffffff;
   transition: color var(--transition);
   font-size: 1rem;
-  /* Tamaño de fuente ajustado */
 }
 
 .experience__details:hover h4 {
@@ -625,6 +613,16 @@ header {
   }
 }
 
+.intro-text {
+  text-align: justify;
+}
+
+.intro-text::after {
+  content: "";
+  display: block;
+  height: 0;
+}
+
 /* PortfolioStyle */
 .portfolio__container {
   display: grid;
@@ -664,9 +662,7 @@ header {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
-  /* Añadido para ajustar el espacio desde arriba */
   margin-bottom: 4rem;
-  /* Ajustado para bajar el botón 2 cm más */
 }
 
 .portfolio__item-content {
@@ -695,9 +691,7 @@ header {
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: calc(min-content + 4cm);
-  /* Aumenta el ancho total en 4 cm */
   padding: 0.7rem 2.2rem;
-  /* Ajusta el padding para aumentar la altura */
   z-index: 2;
   position: fixed;
   left: 50%;
@@ -708,50 +702,37 @@ nav {
   border-radius: 3rem;
   backdrop-filter: blur(15px);
   justify-content: center;
-  /* Centra los elementos hijos horizontalmente */
 }
 
-/* Estilos para los enlaces en la barra de navegación */
 nav a {
   background: transparent;
   padding: 1rem;
-  /* Ajusta el padding para mantener la proporción */
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
   font-size: 1.5rem;
-  /* Aumenta el tamaño del texto */
 }
 
-/* Estilos para los enlaces activos */
 nav a.active {
   background: var(--color-bg);
   color: var(--color-white);
 }
 
-/* Estilos para los enlaces en hover */
 nav a:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   nav {
     width: auto;
-    /* Ajusta el ancho para ajustarse al contenido en dispositivos móviles */
     padding: 0.5rem;
-    /* Ajusta el padding para reducir la altura */
     bottom: 1rem;
-    /* Ajusta la posición inferior */
     left: 50%;
     transform: translateX(-50%);
-    /* Mantiene el centrado horizontal */
   }
 
   nav a {
     font-size: 1rem;
-    /* Tamaño del texto para pantallas pequeñas */
     padding: 0.5rem;
-    /* Padding para pantallas pequeñas */
   }
 }

@@ -1,4 +1,4 @@
-/* src/components/contactStyle.css */
+/* ContactStyle */
 .container.contact__container {
   width: 60%;
   display: flex;
@@ -42,13 +42,11 @@
 .contact__option h5 {
   color: var(--color-light);
   font-size: 1rem;
-  /* Tamaño original para pantallas pequeñas */
 }
 
 .contact__option h4 {
   font-weight: 500;
   font-size: 1.2rem;
-  /* Tamaño original para pantallas pequeñas */
 }
 
 form span {
