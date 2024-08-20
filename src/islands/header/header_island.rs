@@ -16,7 +16,7 @@ pub fn Header() -> impl IntoView {
     }
 }
 
-#[component]
+#[island]
 pub fn HeaderSocials() -> impl IntoView {
     view! {
         <div class="header__socials">
@@ -33,7 +33,7 @@ pub fn HeaderSocials() -> impl IntoView {
     }
 }
 
-#[component]
+#[island]
 pub fn CTA() -> impl IntoView {
     let cv_path =
         "https://drive.google.com/file/d/1baFmUQs577rF7cBq7qsJUE9KI1N5_ecc/view?usp=drive_link";
@@ -53,17 +53,17 @@ pub fn CTA() -> impl IntoView {
     }
 }
 
-#[component]
+#[island]
 fn BsLinkedin() -> impl IntoView {
     view! { <span>"LinkedIn"</span> }
 }
 
-#[component]
+#[island]
 fn FaGithub() -> impl IntoView {
     view! { <span>"GitHub"</span> }
 }
 
-// #[component]
+// #[island]
 // fn FaAngellist() -> impl IntoView {
 //     view! { <span>"AngelList"</span> }
 // }

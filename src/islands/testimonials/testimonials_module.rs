@@ -57,7 +57,7 @@ pub fn Testimonials() -> impl IntoView {
         },
     ];
 
-    // Renderiza el componente
+    // Renderiza el islande
     view! {
         <section id="testimonials">
             <h5>"Feedback from my peers"</h5>

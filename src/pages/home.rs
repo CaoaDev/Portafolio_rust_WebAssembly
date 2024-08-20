@@ -2,13 +2,13 @@ use leptos::*;
 
 use crate::islands::*;
 
-// use crate::components::contact::contact::Contact;
-// use crate::components::experience::experience::Experience;
-// use crate::components::footer::footer::Footer;
-// use crate::components::header::header::Header;
-// use crate::components::intro::intro::Intro;
-// use crate::components::portafolio::portafolio::Portfolio;
-// use crate::components::topbar::topbar::Topbar;
+// use crate::islands::contact::contact::Contact;
+// use crate::islands::experience::experience::Experience;
+// use crate::islands::footer::footer::Footer;
+// use crate::islands::header::header::Header;
+// use crate::islands::intro::intro::Intro;
+// use crate::islands::portafolio::portafolio::Portfolio;
+// use crate::islands::topbar::topbar::Topbar;
 
 /// Default Home Page
 #[island]

@@ -71,7 +71,7 @@ pub fn Portfolio() -> impl IntoView {
         },
     ];
 
-    // Renderiza el componente
+    // Renderiza el islande
     view! {
         <section id="portfolio">
             <h5>"My Recent Work"</h5>

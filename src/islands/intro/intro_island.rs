@@ -41,12 +41,12 @@ pub fn Intro() -> impl IntoView {
     }
 }
 
-#[component]
+#[island]
 fn FaAward() -> impl IntoView {
     view! { <span>"Award Icon"</span> }
 }
 
-#[component]
+#[island]
 fn VscFolderLibrary() -> impl IntoView {
     view! { <span>"Folder Library Icon"</span> }
 }

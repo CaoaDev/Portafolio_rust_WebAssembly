@@ -28,17 +28,17 @@ pub fn Footer() -> impl IntoView {
     }
 }
 
-#[component]
+#[island]
 fn BsLinkedin() -> impl IntoView {
     view! { <span>"LinkedIn"</span> }
 }
 
-#[component]
+#[island]
 fn FaGithub() -> impl IntoView {
     view! { <span>"GitHub"</span> }
 }
 
-// #[component]
+// #[island]
 // fn FaAngellist() -> impl IntoView {
 //     view! { <span>"AngelList"</span> }
 // }
