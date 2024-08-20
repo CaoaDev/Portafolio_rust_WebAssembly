@@ -38,8 +38,6 @@
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
-  margin: 0 auto;
-  /* Centro el componente en su contenedor */
 }
 
 .about__card:hover {
@@ -63,13 +61,26 @@
   color: var(--color-light);
 }
 
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centra horizontalmente */
+  text-align: center;
+  padding: 0 1rem;
+  /* Añade padding lateral si es necesario */
+  box-sizing: border-box;
+  /* Asegura que el padding esté incluido en el ancho total */
+}
+
 .about__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
-  max-width: 90%;
-  /* Asegura que el texto no se extienda demasiado */
-  margin: 0 auto;
-  /* Centro el texto */
+}
+
+.btn.btn-primary {
+  margin-top: 2rem;
+  /* Ajusta según sea necesario para el espaciado */
 }
 
 @media screen and (max-width: 1024px) {
@@ -89,15 +100,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  .about__container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 0 1rem;
-    /* Añadir un poco de relleno */
-  }
-
   .about__me {
-    width: 100%;
+    width: 65%;
     margin: 0 auto 3rem;
   }
 
@@ -108,6 +112,12 @@
 
   .about__content {
     text-align: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra horizontalmente */
   }
 
   .about__content p {
@@ -117,10 +127,6 @@
 
 .intro-text {
   text-align: justify;
-  max-width: 90%;
-  /* Asegura que el texto no se extienda demasiado */
-  margin: 0 auto;
-  /* Centro el texto */
 }
 
 .intro-text::after {
