@@ -1,4 +1,4 @@
-/* Estilos generales para la barra de navegación */
+/* TopbarStyle */
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: calc(min-content + 4cm);

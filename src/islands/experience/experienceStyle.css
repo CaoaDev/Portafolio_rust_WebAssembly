@@ -1,3 +1,4 @@
+/* Experience */
 .experience__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -22,12 +23,19 @@
   text-align: center;
   margin-bottom: 2rem;
   color: var(--color-primary);
+  font-size: 1.4rem;
+  /* Tamaño de fuente ajustado */
 }
 
 .experience__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
+}
+
+.experience__content p {
+  font-size: 0.9rem;
+  /* Tamaño de fuente ajustado */
 }
 
 .experience__details {
@@ -39,27 +47,24 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  /* Opcional, si quieres quitar el subrayado del enlace */
   color: inherit;
-  /* Asegura que el color del texto se herede del elemento padre */
 }
 
 .experience__details-icon {
   margin-right: 1cm;
-  /* Espacio de 1 cm entre el ícono y el texto */
+  font-size: 1.2rem;
+  /* Tamaño de fuente ajustado */
 }
 
-/* Aplica el efecto solo al h4 dentro de .experience__details */
 .experience__details h4 {
   color: #ffffff;
-  /* Color blanco inicial */
   transition: color var(--transition);
-  /* Transición suave para el color */
+  font-size: 1rem;
+  /* Tamaño de fuente ajustado */
 }
 
 .experience__details:hover h4 {
   color: var(--color-primary-variant);
-  /* Color azul al pasar el ratón */
 }
 
 .experience__details-icon {
@@ -73,13 +78,23 @@
   }
 
   .experience__container>div {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 2rem;
   }
 
-  .experience__content p {
-    padding: 1rem;
+  .experience__content {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .experience__details-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -91,5 +106,15 @@
   .experience__container>div {
     width: 100%;
     padding: 2rem 1rem;
+  }
+
+  .experience__details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .experience__details-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
 }
